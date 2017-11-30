@@ -6,7 +6,7 @@ const users = require('./routes/users');
 //const shoppingLists = require('./routes/shoppingLists');
 
 const url = 'mongodb://127.0.0.1:27017';
-mongoose.connect(url);
+//mongoose.connect(url);
 
 var app = express();
 
