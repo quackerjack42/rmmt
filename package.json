@@ -1,17 +1,23 @@
 {
-  "name": "13-roommate",
-  "version": "0.0.0",
-  "private": true,
+  "name": "roommate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "node ./bin/www"
+    "restart": "pm2 startOrRestart ecosystem.config.js",
+    "deploy": "pm2 deploy ecosystem.config.js production",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quackerjack42/rmmt.git"
+  },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "body-parser": "~1.16.0",
-    "cookie-parser": "~1.4.3",
-    "debug": "~2.6.0",
-    "express": "~4.14.1",
-    "jade": "~1.11.0",
-    "morgan": "~1.7.0",
-    "serve-favicon": "~2.3.2"
+    "express": "^4.14.0"
+  },
+  "devDependencies": {
+    "pm2": "^2.2.2"
   }
 }
